@@ -1,0 +1,299 @@
+@charset "UTF-8";
+/*COLORES*/
+* {
+  margin: 0;
+  padding: 0; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+body {
+  font-family: Chakra Petch, sans-serif;
+  opacity: 0.9;
+  background-image: linear-gradient(0deg, #000000 50%, #373024 50%);
+  background-size: 2px 4px;
+  font-family: Chakra Petch, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh; }
+
+/*---------GRID---------*/
+#gridProducto {
+  display: grid;
+  grid-template-areas: "prodIzq prodDer"
+ "desc desc";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; }
+
+.prodIzq {
+  grid-area: prodIzq;
+  margin-left: 5%;
+  margin-top: 5%;
+  max-width: 100%;
+  height: auto; }
+
+.prodDer {
+  grid-area: prodDer;
+  margin-left: 5%;
+  margin-top: 5%; }
+
+.desc {
+  grid-area: desc;
+  margin: 5%; }
+
+/*---------MEDIA QUERY---------*/
+@media (max-width: 768px) {
+  #gridProducto {
+    display: grid;
+    grid-template-areas: "prodIzq"
+ "prodDer"
+ "desc";
+    grid-template-rows: 1fr .2fr 1fr;
+    grid-template-columns: 1fr; } }
+
+/*---------ESTILIZACIÓN---------*/
+.bgColor {
+  background-color: #f5f5f5; }
+
+.padTexto {
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-bottom: 10%;}
+
+.containerBanner {
+  width: auto; }
+  .containerBanner img {
+    width: 100%; }
+
+.posCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 2%; }
+
+iframe {
+  width: 100%; }
+
+.firma {
+  max-width: 200px;
+  position: relative;
+  right: 0px;
+  margin-top: 10px; }
+
+#precio {
+  font-weight: 600; }
+
+.productoTitulo, .productoPrecio {
+  Font-size: 30px; }
+
+.productoPrecio {
+  font-weight: 600;
+  color: #ba3127;
+  padding-left: 5%; }
+
+.sombra {
+  -webkit-box-shadow: 0px 0px 10px 19px rgba(38, 30, 24, 0.16);
+  -moz-box-shadow: 0px 0px 12px 10px rgba(38, 30, 24, 0.16);
+  box-shadow: 0px 0px 22px 5px; }
+
+.flexCards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+/*---------ENCABEZADOS---------*/
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 300%;
+  background-color: #f5f5f5;
+  margin-left: 25px;
+  margin-bottom: 0px; }
+
+h2 {
+  background-color: #f5f5f5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%; }
+
+#headerFlex, #logoMain {
+  display: flex;
+  justify-content: center; }
+
+#navFlex {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  justify-content: space-around;
+  background-color: #f5f5f5; }
+
+/*---------LISTAS Y TABLAS---------*/
+ul {
+  display: flex;
+  border-bottom: solid 2px slategrey;
+  margin-bottom: 0px; }
+  ul li {
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: #f5f5f5;
+    list-style-type: none;
+    font-size: 20px;
+    display: inline;
+    margin-left: auto; }
+    ul li a {
+      text-decoration: none; }
+      ul li a:link {
+        color: black; }
+      ul li a:visited {
+        color: black; }
+      ul li a:focus {
+        border-bottom: 1px solid;
+        background: darkslategrey; }
+      ul li a:hover {
+        color: darkslategrey;
+        text-shadow: rgba(255, 162, 0, 0.9) 0px 0px 10px; }
+      ul li a:active {
+        color: #373024; }
+
+nav {
+  display: flex;
+  flex-direction: column-reverse; }
+
+a img {
+  max-width: 100%;
+  display: block; }
+
+/*---------BOTONES---------*/
+.botonComprar {
+  box-shadow: inset 0px 1px 0px 0px #a6827e;
+  background: linear-gradient(to bottom, #7d5d3b 5%, #373024 100%);
+  background-color: #7d5d3b;
+  border-radius: 3px;
+  border: 1px solid #54381e;
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 10px 24px 10px 24px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #4d3534;
+  width: 80px; }
+  .botonComprar:hover {
+    background: linear-gradient(to bottom, #373024 5%, #7d5d3b 100%);
+    background-color: #634b30;
+    color: #f5f5f5; }
+  .botonComprar:active {
+    position: relative;
+    top: 2px; }
+
+.btn i:before {
+  width: 14px;
+  height: 14px;
+  position: fixed;
+  color: #fff;
+  background: #0077B5;
+  padding: 10px;
+  border-radius: 50%;
+  top: 5px;
+  right: 5px; }
+
+#botonesForm {
+  display: flex;
+  justify-content: right; }
+
+/*---------CARDS---------*/
+.card {
+  display: inline-block;
+  position: relative;
+  width: 400px;
+  min-width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 10px; }
+
+.prod-main-img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto; }
+
+.prod-descripcion {
+  background-image: linear-gradient(0deg, #000000, #373024);
+  position: absolute;
+  top: 55%;
+  height: 65%;
+  width: 108%; }
+
+.prod-logo {
+  height: 80px;
+  width: 80px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30%;
+  left: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7); }
+  .prod-logo img {
+    max-width: 100%;
+    height: auto; }
+
+.prod-descripcion-bk {
+  position: absolute;
+  color: #fff;
+  font-weight: 700;
+  left: 150px;
+  bottom: 26%; }
+
+.prod-btn {
+  position: absolute;
+  color: #fff;
+  right: 10%;
+  bottom: 10%; }
+
+.prod-precio {
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  font-size: 120%;
+  left: 30px;
+  bottom: 10%; }
+
+/*---------ANIMACIONES---------*/
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
+.slide-in-right {
+  animation: slide-in-right 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    filter: blur(0);
+    opacity: 1; } }
+
+.puff-in-center {
+  animation: puff-in-center 0.3s cubic-bezier(0.47, 0, 0.745, 0.715) both; }

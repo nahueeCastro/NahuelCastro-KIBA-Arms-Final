@@ -1,0 +1,16 @@
+/*---------ANIMACIONES---------*/
+@keyframes slide-in-right {
+	0% {
+		transform: translateX(1000px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.slide-in-right {
+	animation: slide-in-right 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@keyframes puff-in-center{0%{transform:scale(2);filter:blur(4px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+.puff-in-center{animation:puff-in-center .3s cubic-bezier(.47,0.000,.745,.715) both}
