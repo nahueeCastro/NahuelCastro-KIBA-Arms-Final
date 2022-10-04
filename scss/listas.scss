@@ -1,18 +1,20 @@
 /*---------LISTAS Y TABLAS---------*/
 ul {
 	display: flex;
+	justify-content: space-around;
 	border-bottom: solid 2px slategrey;
 	margin-bottom: 0px;
+	background-color: map-get($colores,colSecundario);
 	li {
-		margin-left: 0px;
-		margin-right: 0px;
+		display: flex, inline;
+		justify-content: space-around;
 		background-color: map-get($colores,colSecundario);
 		list-style-type: none;
 		font-size: 20px;
-		display: inline;
 		margin-left: auto;
 		a{
 			text-decoration: none;
+			white-space: nowrap;
 			&:link{
 				color: black;
 			}

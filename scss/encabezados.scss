@@ -4,9 +4,12 @@ h1{
 	flex-direction: column;
 	justify-content: center;
 	font-size: 300%;
+	font-weight: 500;
 	background-color: map-get($colores,colSecundario);
 	margin-left: 25px;
-	margin-bottom: 0px
+	margin-bottom: 0px;
+	margin-top: 0;
+	line-height: 1.2;
 }
 h2{
 	background-color: map-get($colores,colSecundario);

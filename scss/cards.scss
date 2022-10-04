@@ -3,7 +3,15 @@
 	position:absolute;
 	color:#fff
 }
-
+.flexCards{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin:auto;
+	margin-left: 5%;
+	margin-right: 5%;
+}
 .card {
 	display: inline-block;
 	position: relative;
